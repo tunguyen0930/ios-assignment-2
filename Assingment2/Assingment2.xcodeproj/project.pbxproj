@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0006826524B2DF1400838BEA /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006826424B2DF1400838BEA /* ListViewController.swift */; };
 		8251E1EEFB5AEE28741F67C4 /* Pods_Assingment2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB14328DFDBCB778C0F80AE4 /* Pods_Assingment2.framework */; };
 		BE4438D224B09C8000231BB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4438D124B09C8000231BB0 /* AppDelegate.swift */; };
 		BE4438D424B09C8000231BB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4438D324B09C8000231BB0 /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0006826424B2DF1400838BEA /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		1ED9B05EC40ACE4ED4F6331A /* Pods-Assingment2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assingment2.release.xcconfig"; path = "Target Support Files/Pods-Assingment2/Pods-Assingment2.release.xcconfig"; sourceTree = "<group>"; };
 		9EBBB7C38D3BE52B5474A978 /* Pods-Assingment2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assingment2.debug.xcconfig"; path = "Target Support Files/Pods-Assingment2/Pods-Assingment2.debug.xcconfig"; sourceTree = "<group>"; };
 		BE4438CE24B09C8000231BB0 /* Assingment2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assingment2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,7 @@
 				BE4438DA24B09C8200231BB0 /* Assets.xcassets */,
 				BE4438DC24B09C8200231BB0 /* LaunchScreen.storyboard */,
 				BE4438DF24B09C8200231BB0 /* Info.plist */,
+				0006826424B2DF1400838BEA /* ListViewController.swift */,
 			);
 			path = Assingment2;
 			sourceTree = "<group>";
@@ -88,7 +91,6 @@
 				9EBBB7C38D3BE52B5474A978 /* Pods-Assingment2.debug.xcconfig */,
 				1ED9B05EC40ACE4ED4F6331A /* Pods-Assingment2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +211,7 @@
 			files = (
 				BE4438D624B09C8000231BB0 /* ViewController.swift in Sources */,
 				BE4438D224B09C8000231BB0 /* AppDelegate.swift in Sources */,
+				0006826524B2DF1400838BEA /* ListViewController.swift in Sources */,
 				BE4438D424B09C8000231BB0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,7 +360,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64994J6UD3;
 				INFOPLIST_FILE = Assingment2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -377,7 +380,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64994J6UD3;
 				INFOPLIST_FILE = Assingment2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
