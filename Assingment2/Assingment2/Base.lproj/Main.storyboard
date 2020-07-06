@@ -8,23 +8,37 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Map-->
         <scene sceneID="Q3M-to-xle">
             <objects>
-                <viewController id="aUP-Io-awW" sceneMemberID="viewController">
+                <viewController id="aUP-Io-awW" customClass="MapViewController" customModule="Assingment2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mgN-zN-4Ob">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tqL-lf-ioO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5J5-cb-OVp" firstAttribute="trailing" secondItem="tqL-lf-ioO" secondAttribute="trailing" id="IzH-R7-Y2P"/>
+                            <constraint firstItem="tqL-lf-ioO" firstAttribute="top" secondItem="5J5-cb-OVp" secondAttribute="top" id="Tah-q5-ZlL"/>
+                            <constraint firstItem="tqL-lf-ioO" firstAttribute="leading" secondItem="5J5-cb-OVp" secondAttribute="leading" id="aDm-9z-wX9"/>
+                            <constraint firstItem="5J5-cb-OVp" firstAttribute="bottom" secondItem="tqL-lf-ioO" secondAttribute="bottom" id="csk-v9-trP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5J5-cb-OVp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="H64-4r-gI7"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="H64-4r-gI7"/>
+                    <connections>
+                        <outlet property="mapview" destination="tqL-lf-ioO" id="vTr-GY-HGa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJM-rC-qKe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-526" y="761"/>
         </scene>
-        <!--Item 1-->
+        <!--List-->
         <scene sceneID="B4v-Ag-GF2">
             <objects>
                 <viewController id="v0m-t5-zuv" customClass="ListViewController" customModule="Assingment2" customModuleProvider="target" sceneMemberID="viewController">
@@ -87,7 +101,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kog-tN-X35"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="SB5-Ll-KQd"/>
+                    <tabBarItem key="tabBarItem" title="List" image="list.dash" catalog="system" landscapeImage="list.dash" id="SB5-Ll-KQd"/>
                     <connections>
                         <outlet property="tableview" destination="9lv-4h-5c2" id="6ls-LW-0TZ"/>
                     </connections>
@@ -115,4 +129,8 @@
             <point key="canvasLocation" x="-526" y="-183"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="list.dash" catalog="system" width="64" height="42"/>
+        <image name="map" catalog="system" width="64" height="56"/>
+    </resources>
 </document>
