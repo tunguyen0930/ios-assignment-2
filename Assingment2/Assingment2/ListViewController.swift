@@ -23,7 +23,9 @@ class ListViewController: UIViewController {
 }
 
 extension ListViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
 
 extension ListViewController: UITableViewDataSource {
@@ -32,8 +34,10 @@ extension ListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "Hello"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListTableViewCell
+        cell.txt1.text = "Dòng 1"
+        cell.txt2.text = "Dòng 2"
+        cell.txt1.textColor = .red
         return cell
     }
     
