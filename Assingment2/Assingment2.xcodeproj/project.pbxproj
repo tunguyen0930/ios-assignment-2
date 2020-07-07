@@ -10,6 +10,8 @@
 		0006826524B2DF1400838BEA /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006826424B2DF1400838BEA /* ListViewController.swift */; };
 		0006826724B3015D00838BEA /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006826624B3015D00838BEA /* ListTableViewCell.swift */; };
 		0006826924B311D600838BEA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006826824B311D600838BEA /* MapViewController.swift */; };
+		00361EAD24B45C3000F16859 /* HomeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00361EAC24B45C3000F16859 /* HomeListModel.swift */; };
+		00361EAF24B45C4300F16859 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00361EAE24B45C4300F16859 /* HomeViewModel.swift */; };
 		8251E1EEFB5AEE28741F67C4 /* Pods_Assingment2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB14328DFDBCB778C0F80AE4 /* Pods_Assingment2.framework */; };
 		BE4438D224B09C8000231BB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4438D124B09C8000231BB0 /* AppDelegate.swift */; };
 		BE4438D424B09C8000231BB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4438D324B09C8000231BB0 /* SceneDelegate.swift */; };
@@ -23,6 +25,8 @@
 		0006826424B2DF1400838BEA /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		0006826624B3015D00838BEA /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		0006826824B311D600838BEA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		00361EAC24B45C3000F16859 /* HomeListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListModel.swift; sourceTree = "<group>"; };
+		00361EAE24B45C4300F16859 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		1ED9B05EC40ACE4ED4F6331A /* Pods-Assingment2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assingment2.release.xcconfig"; path = "Target Support Files/Pods-Assingment2/Pods-Assingment2.release.xcconfig"; sourceTree = "<group>"; };
 		9EBBB7C38D3BE52B5474A978 /* Pods-Assingment2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assingment2.debug.xcconfig"; path = "Target Support Files/Pods-Assingment2/Pods-Assingment2.debug.xcconfig"; sourceTree = "<group>"; };
 		BE4438CE24B09C8000231BB0 /* Assingment2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assingment2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +91,8 @@
 				0006826424B2DF1400838BEA /* ListViewController.swift */,
 				0006826624B3015D00838BEA /* ListTableViewCell.swift */,
 				0006826824B311D600838BEA /* MapViewController.swift */,
+				00361EAC24B45C3000F16859 /* HomeListModel.swift */,
+				00361EAE24B45C4300F16859 /* HomeViewModel.swift */,
 			);
 			path = Assingment2;
 			sourceTree = "<group>";
@@ -217,6 +223,8 @@
 			files = (
 				BE4438D624B09C8000231BB0 /* ViewController.swift in Sources */,
 				0006826924B311D600838BEA /* MapViewController.swift in Sources */,
+				00361EAD24B45C3000F16859 /* HomeListModel.swift in Sources */,
+				00361EAF24B45C4300F16859 /* HomeViewModel.swift in Sources */,
 				BE4438D224B09C8000231BB0 /* AppDelegate.swift in Sources */,
 				0006826524B2DF1400838BEA /* ListViewController.swift in Sources */,
 				BE4438D424B09C8000231BB0 /* SceneDelegate.swift in Sources */,

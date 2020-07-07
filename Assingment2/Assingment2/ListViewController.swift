@@ -17,6 +17,7 @@ class ListViewController: UIViewController {
         super.viewDidLoad()
         tableview.delegate = self
         tableview.dataSource = self
+        HomeViewModel.init(limit: 1, offset: 1)
     }
 
 
