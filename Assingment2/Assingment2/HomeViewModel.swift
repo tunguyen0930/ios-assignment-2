@@ -11,43 +11,29 @@ import RxSwift
 import Combine
 import ObjectMapper
 import Alamofire
+import AlamofireObjectMapper
 
 class HomeViewModel {
-    static let shared = HomeViewModel(limit: 0, offset: 0)
+    static let shared = HomeViewModel()
     public let didChange = PassthroughSubject<HomeViewModel, Never>()
-    @Published var data = HomeListModel() {
+    @Published var data = [HomeListModel]() {
         didSet {
             didChange.send(self)
         }
     }
 
-    init(limit: Int, offset: Int) {
-        doLogin(limit: limit, offset: offset)
+    init() {
+
     }
 
     var signalPush: PublishSubject<Bool> = PublishSubject<Bool>()
     func doLogin(limit: Int, offset: Int) {
-        let param: [String: Any] = [:]
-        Alamofire.request("https://rtlab02.rtworkspace.com/api/query/datamodel?dm_name=test_ucdp_ged181&token=secret&limit=1&offset=1")
-            .responseJSON { (reponse) in
-                switch reponse.result {
-
-                case .success(let reponseData):
-                    print(reponseData)
-                case .failure(let error):
-                    print(error.localizedDescription)
-                }
+        Alamofire.request("https://rtlab02.rtworkspace.com/api/query/datamodel?dm_name=test_ucdp_ged181&token=secret&limit=\(limit)&offset=1").responseArray { (response: DataResponse<[HomeListModel]>) in
+            let forecastArray = response.result.value
+            if let forecastArray = forecastArray {
+                self.data = forecastArray
+                self.signalPush.onNext(true)
+            }
         }
-
-//        Alamofire.request("https://rtlab02.rtworkspace.com/api/query/datamodel?dm_name=test_ucdp_ged181&token=secret&limit=1&offset=1")
-//            .responseString { (reponse) in
-//                switch reponse.result {
-//
-//                case .success(let reponseData):
-//                    print(reponseData)
-//                case .failure(let error):
-//                    print(error.localizedDescription)
-//                }
-//        }
     }
 }

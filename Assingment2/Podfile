@@ -6,8 +6,6 @@ target 'Assingment2' do
   use_frameworks!
 
   # Pods for Assingment2
-pod 'ObjectMapper','~> 3.5.0'
-pod 'Alamofire', '4.9.1'
+pod 'AlamofireObjectMapper', '~> 5.2'
 pod 'RxSwift', '~> 5'
-
 end

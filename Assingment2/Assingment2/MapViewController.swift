@@ -12,18 +12,22 @@ import MapKit
 class MapViewController: UIViewController {
 
     @IBOutlet weak var mapview: MKMapView!
+    var latitude: Double = 0
+    var lontitude: Double = 0
+    var country: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
 
+    override func viewWillAppear(_ animated: Bool = true) {
         let annou = MKPointAnnotation()
-        annou.coordinate = CLLocationCoordinate2D(latitude: 10.754558, longitude: 106.686796)
-        annou.title = "My house"
-        annou.subtitle = "This house"
+        annou.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: lontitude)
+        annou.title = country
         mapview.addAnnotation(annou)
         let region = MKCoordinateRegion(center: annou.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
         mapview.setRegion(region, animated: true)
     }
-    
+
 
     /*
     // MARK: - Navigation
