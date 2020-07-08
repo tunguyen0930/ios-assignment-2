@@ -52,6 +52,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		000242FA24B586CF000A545E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00361EAC24B45C3000F16859 /* HomeListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		000242FB24B586E2000A545E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0006826424B2DF1400838BEA /* ListViewController.swift */,
+				0006826824B311D600838BEA /* MapViewController.swift */,
+				0006826624B3015D00838BEA /* ListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		000242FC24B586E8000A545E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				00361EAE24B45C4300F16859 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		48A1C61F01FB607C5706ED9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +107,9 @@
 		BE4438D024B09C8000231BB0 /* Assingment2 */ = {
 			isa = PBXGroup;
 			children = (
+				000242FC24B586E8000A545E /* ViewModel */,
+				000242FB24B586E2000A545E /* View */,
+				000242FA24B586CF000A545E /* Model */,
 				BE4438D124B09C8000231BB0 /* AppDelegate.swift */,
 				BE4438D324B09C8000231BB0 /* SceneDelegate.swift */,
 				BE4438D524B09C8000231BB0 /* ViewController.swift */,
@@ -88,11 +117,6 @@
 				BE4438DA24B09C8200231BB0 /* Assets.xcassets */,
 				BE4438DC24B09C8200231BB0 /* LaunchScreen.storyboard */,
 				BE4438DF24B09C8200231BB0 /* Info.plist */,
-				0006826424B2DF1400838BEA /* ListViewController.swift */,
-				0006826624B3015D00838BEA /* ListTableViewCell.swift */,
-				0006826824B311D600838BEA /* MapViewController.swift */,
-				00361EAC24B45C3000F16859 /* HomeListModel.swift */,
-				00361EAE24B45C4300F16859 /* HomeViewModel.swift */,
 			);
 			path = Assingment2;
 			sourceTree = "<group>";
