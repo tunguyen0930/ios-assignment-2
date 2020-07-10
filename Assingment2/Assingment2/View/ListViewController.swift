@@ -1,11 +1,3 @@
-//
-//  ListViewController.swift
-//  Assingment2
-//
-//  Created by Minerva on 7/6/20.
-//  Copyright © 2020 Nguyen Anh Tu. All rights reserved.
-//
-
 import UIKit
 
 class ListViewController: UIViewController {
@@ -24,7 +16,7 @@ class ListViewController: UIViewController {
     }
 
     func loadItems () {
-        HomeViewModel.shared.doLogin(limit: limit, offset: offset)
+        HomeViewModel.shared.getList(limit: limit, offset: offset)
         HomeViewModel.shared.signalPush.subscribe(onNext: { event in
             if event {
                 self.listData = HomeViewModel.shared.data

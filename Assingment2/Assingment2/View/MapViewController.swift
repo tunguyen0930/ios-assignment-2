@@ -1,11 +1,3 @@
-//
-//  MapViewController.swift
-//  Assingment2
-//
-//  Created by Minerva on 7/6/20.
-//  Copyright © 2020 Nguyen Anh Tu. All rights reserved.
-//
-
 import UIKit
 import MapKit
 

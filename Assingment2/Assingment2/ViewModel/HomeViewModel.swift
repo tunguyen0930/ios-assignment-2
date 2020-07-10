@@ -27,7 +27,7 @@ class HomeViewModel {
     }
 
     var signalPush: PublishSubject<Bool> = PublishSubject<Bool>()
-    func doLogin(limit: Int, offset: Int) {
+    func getList(limit: Int, offset: Int) {
         Alamofire.request("https://rtlab02.rtworkspace.com/api/query/datamodel?dm_name=test_ucdp_ged181&token=secret&limit=\(limit)&offset=1").responseArray { (response: DataResponse<[HomeListModel]>) in
             let forecastArray = response.result.value
             if let forecastArray = forecastArray {

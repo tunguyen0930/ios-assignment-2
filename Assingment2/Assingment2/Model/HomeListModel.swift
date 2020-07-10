@@ -1,11 +1,3 @@
-//
-//  HomeListModel.swift
-//  Assingment2
-//
-//  Created by Minerva on 7/7/20.
-//  Copyright © 2020 Nguyen Anh Tu. All rights reserved.
-//
-
 import Foundation
 import ObjectMapper
 
